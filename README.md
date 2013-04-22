@@ -1,7 +1,7 @@
 play-metrics
 ============
 
-[Metrics](https://github.com/codahale/metrics) plugin for Play 2.X
+[Metrics](https://github.com/codahale/metrics) plugin for the [Play Framework](http://www.playframework.com/) 2.1.X
 
 Planned features
 =================

@@ -8,7 +8,7 @@ import play.mvc.Result;
 import static com.codahale.metrics.MetricRegistry.name;
 
 /**
- * @author sondre
+ * @author zapodot at gmail dot com
  */
 public class TimerAction extends Action<Timed> {
     @Override

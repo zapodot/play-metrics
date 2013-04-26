@@ -7,6 +7,8 @@ import static com.zapodot.metrics.Contents.toJsonContent;
 import static play.mvc.Results.ok;
 
 /**
+ * Will provide somewhat same functionality for the Play framework as metrics-servlets does for regular Java Web apps
+ *
  * @author zapodot at gmail dot com
  */
 public class MetricsController {

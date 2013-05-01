@@ -17,7 +17,7 @@ object ApplicationBuild extends Build {
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
-    // Add your own project settings here      
+    publishTo := Some(Resolver.file("file",  new File( "../zapodot.github.io/repo/snapshots" )) )
   )
 
 }

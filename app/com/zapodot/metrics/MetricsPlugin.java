@@ -15,8 +15,8 @@ public class MetricsPlugin extends Plugin{
     @Override
     public void onStart() {
         logger.info("Starting MetricsPlugin");
-        if(MetricsGlobal.class.isAssignableFrom(Play.application().getWrappedApplication().global().getClass())) {
-            logger.info("MetricsGlobal has been enabled. Will time and meter all requests, and count all errors");
+        if(MetricsSetup.class.isAssignableFrom(Play.application().getWrappedApplication().global().getClass())) {
+            logger.info("MetricsSetup has been enabled. Will time and meter all requests, and count all errors");
         }
     }
 

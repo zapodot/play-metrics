@@ -15,7 +15,7 @@ import static com.codahale.metrics.MetricRegistry.name;
 /**
  * @author zapodot at gmail dot com
  */
-public class MetricsGlobal extends GlobalSettings {
+public class MetricsSetup extends GlobalSettings {
 
     @Override
     public Action onRequest(Http.Request request, Method actionMethod) {

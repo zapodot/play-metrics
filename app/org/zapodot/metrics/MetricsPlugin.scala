@@ -1,11 +1,10 @@
 import play.api.{Logger, Plugin, Application}
 
-package com.zapodot.metrics {
+package org.zapodot.metrics {
 
 import play.api.mvc.{WithFilters, Result, RequestHeader, Filter}
 import com.codahale.metrics.Timer.Context
 import play.api.GlobalSettings
-import org.zapodot.metrics.Metrics
 
 /**
  * Plugin class that plugs Metrics into a Play Framework application.

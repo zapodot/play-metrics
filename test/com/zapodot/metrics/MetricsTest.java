@@ -2,12 +2,12 @@ package com.zapodot.metrics;
 
 import com.codahale.metrics.Metric;
 import com.codahale.metrics.MetricFilter;
-import com.codahale.metrics.Timer;
 import org.junit.Test;
 
 import java.util.concurrent.Callable;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 
 /**
@@ -35,4 +35,5 @@ public class MetricsTest {
         }));
 
     }
+
 }

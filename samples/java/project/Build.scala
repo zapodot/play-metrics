@@ -10,8 +10,7 @@ object ApplicationBuild extends Build {
   val appDependencies = Seq(
     // Add your project dependencies here,
     javaCore,
-    javaJdbc,
-    "play-metrics" %% "play-metrics" % "1.0-SNAPSHOT" changing()
+    javaJdbc
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(

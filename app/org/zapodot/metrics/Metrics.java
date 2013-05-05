@@ -1,4 +1,4 @@
-package com.zapodot.metrics;
+package org.zapodot.metrics;
 
 import com.codahale.metrics.Counter;
 import com.codahale.metrics.MetricRegistry;

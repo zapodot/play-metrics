@@ -1,4 +1,4 @@
-package controllers.metrics;
+package org.zapodot.controllers.metrics;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.zapodot.metrics;
+package org.zapodot.metrics;
 
 import play.mvc.With;
 
@@ -8,12 +8,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * Annotation to be used on Controller classes or methods that should be timed
+ *
  * @author zapodot at gmail dot com
  */
-@With(MeterAction.class)
+@With(TimerAction.class)
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Metered {
-    String value() default "";
-
+public @interface Timed {
 }

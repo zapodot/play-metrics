@@ -1,4 +1,4 @@
-package com.zapodot.metrics;
+package org.zapodot.metrics;
 
 import com.codahale.metrics.Timer;
 import play.mvc.Action;

@@ -1,4 +1,4 @@
-package com.zapodot.metrics;
+package org.zapodot.metrics;
 
 import play.mvc.Action;
 import play.mvc.Http;

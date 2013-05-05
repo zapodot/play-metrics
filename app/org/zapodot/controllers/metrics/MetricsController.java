@@ -1,9 +1,9 @@
-package controllers.metrics;
+package org.zapodot.controllers.metrics;
 
-import com.zapodot.metrics.Metrics;
+import org.zapodot.metrics.Metrics;
 import play.mvc.Result;
 
-import static com.zapodot.metrics.Contents.toJsonContent;
+import static org.zapodot.metrics.Contents.toJsonContent;
 import static play.mvc.Results.ok;
 
 /**

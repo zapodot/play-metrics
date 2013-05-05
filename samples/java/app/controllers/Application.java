@@ -1,7 +1,7 @@
 package controllers;
 
-import com.zapodot.metrics.Metered;
-import com.zapodot.metrics.Timed;
+import org.zapodot.metrics.Metered;
+import org.zapodot.metrics.Timed;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.index;

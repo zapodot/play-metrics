@@ -10,8 +10,8 @@ GET     /wait                       controllers.Application.waitAWhile()
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
-GET     /metrics/timers             org.controllers.metrics.MetricsController.timers()
+GET     /metrics/timers             org.zapodot.controllers.metrics.MetricsController.timers()
 
-GET     /metrics/meters             org.controllers.metrics.MetricsController.meters()
+GET     /metrics/meters             org.zapodot.controllers.metrics.MetricsController.meters()
 
-GET     /metrics/counters           org.controllers.metrics.MetricsController.counters()
+GET     /metrics/counters           org.zapodot.controllers.metrics.MetricsController.counters()

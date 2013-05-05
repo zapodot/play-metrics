@@ -6,11 +6,14 @@ object ApplicationBuild extends Build {
 
   val appName         = "metrics-java"
   val appVersion      = "1.0-SNAPSHOT"
+  val metricsVersion = "3.0.0-BETA2"
+
 
   val appDependencies = Seq(
     // Add your project dependencies here,
     javaCore,
-    javaJdbc
+    javaJdbc,
+    "com.codahale.metrics" % "metrics-json" % metricsVersion
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(

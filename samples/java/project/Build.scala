@@ -15,7 +15,7 @@ object ApplicationBuild extends Build {
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
-    resolvers += "Zapodot snapshots" at "http://zapodot.github.io/repo/snapshots/"  
-)
+    unmanagedBase <<= baseDirectory { base => base / ".." / ".." / "target" / "scala-2.10" }
+  )
 
 }

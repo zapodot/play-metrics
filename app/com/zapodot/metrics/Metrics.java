@@ -1,9 +1,13 @@
 package com.zapodot.metrics;
 
+import com.codahale.metrics.Counter;
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
+import play.api.mvc.RequestHeader;
 
 import java.util.concurrent.Callable;
+
+import static com.codahale.metrics.MetricRegistry.name;
 
 /**
  * @author zapodot at gmail dot com
@@ -29,6 +33,14 @@ public class Metrics {
             timerContext.stop();
         }
 
+    }
+
+    public static Timer timerForRequest(RequestHeader requestHeader) {
+        return get().timer(name("request-timer", requestHeader.uri(), requestHeader.method()));
+    }
+
+    public static Counter countThrowable(RequestHeader requestHeader, Throwable t) {
+        return get().counter(name("error", t.getClass().getName(), requestHeader.uri(), requestHeader.method()));
     }
 
 }

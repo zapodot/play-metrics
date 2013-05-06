@@ -42,10 +42,20 @@ GET     /metrics/counters           org.zapodot.controllers.metrics.MetricsContr
 
 Development status
 ==================
-- [x] Annotations that may be added to individual Controller classes or methods to add Metrics to them
-- [] The ability to add a Global listener that add time and meter metrics to all HTTP calls to your application
-- [x] Controller class that may expose all metrics that is measured by your application
-- [] Make reporting to SLF4j, CSV, Graphite or other mechanisms easy configurable
+Completed 
+---------
+- Annotations that may be added to individual Controller classes or methods to add Metrics to them
+- Controller class that may expose all metrics that is measured by your application
+
+Work in progress
+----------------
+- The ability to add a Global listener that add time and meter metrics to all HTTP calls to your application
+
+TODO
+------
+- Make reporting to SLF4j, CSV, Graphite or other mechanisms easy configurable
+
+
 
 License
 ========

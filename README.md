@@ -12,32 +12,32 @@ Add dependency
 A snapshot version of the plugin has been uploaded to the Sonatype OSS snapshot repository.
 
 Add the following to the "appDependencies" sequence in your project/Build.scala file:
-´´´scala
+```scala
 "org.zapodot" % "play-metrics" %% "1.0-SNAPSHOT"
-´´´
+```
 
 Add metrics
 -----------
 ### Add @Metered to your controllers
 You can either put it on your Controller class, thus enabling it for all controller methods in that class
 or on the individual methods you wish to Time.
-´´´java
+```java
 @org.zapodot.metrics.Timed
 @org.zapodot.metrics.Metered
 public static Result index() {
     return ok(index.render("Your new application is ready."));
 }
-´´´
+```
 
 ### Expose the metrics as JSON
-Add the following to your ´routes´ file to expose a JSON view of the metrics gathered by this plugin
-´´´
+Add the following to your `routes` file to expose a JSON view of the metrics gathered by this plugin
+```
 GET     /metrics/timers             org.zapodot.controllers.metrics.MetricsController.timers()
 
 GET     /metrics/meters             org.zapodot.controllers.metrics.MetricsController.meters()
 
 GET     /metrics/counters           org.zapodot.controllers.metrics.MetricsController.counters()
-´´´
+```
 
 
 Development status

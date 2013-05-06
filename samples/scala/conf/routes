@@ -1,0 +1,15 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index
+
+GET     /metrics/timers             org.zapodot.controllers.metrics.MetricsController.timers
+
+GET     /metrics/meters             org.zapodot.controllers.metrics.MetricsController.meters
+
+GET     /metrics/counters           org.zapodot.controllers.metrics.MetricsController.counters
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

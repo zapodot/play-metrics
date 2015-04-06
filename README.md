@@ -3,6 +3,8 @@ play-metrics
 
 [Metrics](https://github.com/codahale/metrics) plugin for the [Play Framework](http://www.playframework.com/) 2.1.X [![Build Status](https://travis-ci.org/zapodot/play-metrics.png?branch=master)](https://travis-ci.org/zapodot/play-metrics)
 
+**This project is not actively maintained. Feel free to fork this repo and continue this effort if you actually need it**
+
 Quickstart
 ==========
 
